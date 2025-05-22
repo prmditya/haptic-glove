@@ -17,10 +17,10 @@ public class ExampleMod {
 
     @SubscribeEvent
     public void onPlayerDamaged(LivingHurtEvent event) {
-    if (event.getEntity() instanceof Player player && !player.level().isClientSide()) {
-        System.out.println("Player terkena damage! Mengirim sinyal ke glove...");
-        CompletableFuture.runAsync(this::sendSignalToESP);
-    }
+      if (event.getEntity() instanceof Player player && !player.level().isClientSide()) {
+          System.out.println("Player terkena damage! Mengirim sinyal ke glove...");
+          CompletableFuture.runAsync(this::sendSignalToESP);
+      }
     }
 
   private void sendSignalToESP() {
@@ -28,7 +28,6 @@ public class ExampleMod {
       URL url = new URL(Config.ESP8266_DNS + Config.VIBRATE_ENDPOINT);
       HttpURLConnection connection = (HttpURLConnection)url.openConnection();
       connection.setRequestMethod("GET");
-      connection.setRequestProperty("Authorization", Config.AUTH_TOKEN);
       int responseCode = connection.getResponseCode();
       System.out.println("HTTP Response: " + responseCode);
     } catch (IOException e) {
