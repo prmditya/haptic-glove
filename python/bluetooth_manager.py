@@ -13,7 +13,7 @@ class BluetoothManager:
     def find_esp32_port(self):
         print(f"[BT_Manager] Searching for ESP32 Bluetooth COM port: {self.device_name}...")
         
-        candidate_ports = ["COM7", "COM8"]
+        candidate_ports = ["COM8", "COM9"]
         
         for p_candidate in candidate_ports:
             print(f"[BT_Manager] Attempting direct check for: {p_candidate}")

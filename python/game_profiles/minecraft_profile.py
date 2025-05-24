@@ -36,8 +36,9 @@ class MinecraftProfile:
                 # Logika pemicu getaran statis
                 if message == "HIT" or message == "EXPLOSION":
                     self.bt_manager.send_command("VIBRATE")
+                    print("Sending Vibrate")
                     # Untuk getaran singkat, Anda bisa menambahkan delay dan STOP
-                    # threading.Timer(0.2, self.bt_manager.send_command, args=["STOP"]).start()
+                    threading.Timer(0.5, self.bt_manager.send_command, args=["STOP"]).start()
                 # else: # Jika Anda ingin motor mati saat tidak ada event spesifik
                 #     self.bt_manager.send_command("STOP")
 

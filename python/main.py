@@ -6,8 +6,7 @@ from tkinter import messagebox, ttk
 
 from bluetooth_manager import BluetoothManager
 from game_profiles.minecraft_profile import MinecraftProfile
-from game_profiles.flightgear_profile import FlightGearProfile
-from game_profiles.speeddreams_profile import SpeedDreamsProfile
+from game_profiles.lfs_profile import LFSProfile
 
 class HapticGloveAppGUI(tk.Tk):
     def __init__(self):
@@ -19,8 +18,7 @@ class HapticGloveAppGUI(tk.Tk):
         self.active_profile = None
         self.profiles = {
             "Minecraft": MinecraftProfile,
-            "FlightGear": FlightGearProfile,
-            "Speed Dreams": SpeedDreamsProfile,
+            "Life for Speed": LFSProfile,
         }
 
         self._create_widgets()
