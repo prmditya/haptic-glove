@@ -1,16 +1,11 @@
 # Haptic Glove for Gaming Immersion ✨🎮
 
------
 
 *(Replace with a captivating GIF or screenshot of your project in action\! Place it in the `assets/` folder.)*
-
------
 
 ## Project Overview 🚀
 
 Dive into a new dimension of gaming with the **Haptic Glove for Gaming Immersion**\! This project presents an innovative haptic feedback system, powered by an **ESP32** microcontroller and controlled by a versatile **Python application**. It's designed to bring in-game events to life, translating them into tangible vibrations and sensations directly on the user's hand. Get ready to *feel* your games like never before\!
-
------
 
 ## Key Features 🌟
 
@@ -21,8 +16,6 @@ Dive into a new dimension of gaming with the **Haptic Glove for Gaming Immersion
       * **Minecraft Integration (Custom Mod):** Employs a custom-built Minecraft mod to capture in-game events (e.g., taking damage, breaking blocks) and relay them to the Python app for immersive haptic responses. ⛏️💥
   * **Reliable Bluetooth Communication:** Ensures stable and consistent wireless communication between the Python application and the ESP32-based glove. 📶
 
------
-
 ## System Architecture 🏗️
 
 The Haptic Glove system is a symphony of hardware and software components working in harmony:
@@ -32,8 +25,6 @@ The Haptic Glove system is a symphony of hardware and software components workin
   * **Game Mods (e.g., Minecraft Mod):** Bridges the gap directly within supported games, capturing specific in-game occurrences and forwarding them to the Python application.
 
 *(Replace with the path to your system block diagram in the `assets/` folder.)*
-
------
 
 ## Getting Started 🏁
 
@@ -57,8 +48,6 @@ Follow these steps to set up and experience the Haptic Glove system.
     ```
   * **Minecraft Java Edition** (Required for Minecraft Haptics)
   * **Minecraft Mod Loader** (e.g., [Fabric](https://fabricmc.net/) or [Forge](https://files.minecraftforge.net/)) compatible with your Minecraft version.
-
------
 
 ## Setup Instructions 🔧
 
@@ -97,8 +86,6 @@ Follow these steps to set up and experience the Haptic Glove system.
       * **Install the mod** into your Minecraft client (usually by placing the generated `.jar` file into your Minecraft `mods` folder).
 3.  Ensure your Minecraft instance is running with the mod successfully loaded *before* activating the Minecraft profile in the Haptic Glove Python application.
 
------
-
 ## Supported Game Profiles 🎮
 
 This system employs dedicated profiles to deliver customized haptic feedback for various games.
@@ -123,10 +110,6 @@ This system employs dedicated profiles to deliver customized haptic feedback for
     3.  Activate the "Minecraft" profile within the Haptic Glove Control Python application.
         *(The mod automatically dispatches events to the Python app on UDP port 25566. Please ensure this port is not blocked by your firewall.)*
 
------
-
 ## License 📜
 
-This project is licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
-
------
+This project is licensed under the [MIT License](https://www.github.com/prmditya/haptic-glove/blob/main/LICENSE).
