@@ -78,7 +78,6 @@ class BluetoothManager:
         if self.ser and self.ser.is_open:
             try:
                 self.ser.write(f"{command}\n".encode('utf-8'))
-                # print(f"[BT_Manager] Sent: {command}") # Untuk debugging lebih lanjut
                 return True
             except serial.SerialException as e:
                 print(f"[BT_Manager] Error sending command: {e}. Attempting to reconnect...")

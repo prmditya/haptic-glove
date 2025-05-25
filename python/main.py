@@ -12,7 +12,7 @@ class HapticGloveAppGUI(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Haptic Glove Control")
-        self.geometry("400x300") # Ukuran jendela
+        self.geometry("400x300")
 
         self.bt_manager = BluetoothManager(device_name="HapticGlove_Static")
         self.active_profile = None
