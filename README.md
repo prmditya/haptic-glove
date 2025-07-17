@@ -1,7 +1,8 @@
 # Haptic Glove for Gaming Immersion ✨🎮
 
-
-*(Replace with a captivating GIF or screenshot of your project in action\! Place it in the `assets/` folder.)*
+<div align=center>
+<img width="425" height="442" alt="screenshot-20250717-130143" src="https://github.com/user-attachments/assets/364a5017-d417-4dbf-8ff0-bdcd3da6814b" />
+</div>
 
 ## Project Overview 🚀
 
