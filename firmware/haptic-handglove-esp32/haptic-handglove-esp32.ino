@@ -17,6 +17,9 @@ void setup() {
 
   pinMode(VIBRATION_MOTOR_PIN, OUTPUT);
   digitalWrite(VIBRATION_MOTOR_PIN, LOW);
+
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, LOW);
 }
 
 void loop() {
@@ -34,7 +37,7 @@ void loop() {
 
     } else if (command == "STOP") {
       digitalWrite(VIBRATION_MOTOR_PIN, LOW);
-      digitalWrite(LED_BUILTIN, HIGH);
+      digitalWrite(LED_BUILTIN, LOW);
       Serial.println("Vibration motor OFF");
 
     } else {
