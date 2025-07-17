@@ -25,8 +25,6 @@ The Haptic Glove system is a symphony of hardware and software components workin
   * **Python Application:** The central hub, processing game telemetry/events, applying haptic logic based on the active game profile, and sending commands to the ESP32.
   * **Game Mods (e.g., Minecraft Mod):** Bridges the gap directly within supported games, capturing specific in-game occurrences and forwarding them to the Python application.
 
-*(Replace with the path to your system block diagram in the `assets/` folder.)*
-
 ## Getting Started 🏁
 
 Follow these steps to set up and experience the Haptic Glove system.
